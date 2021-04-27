@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/Task.css"
 import formatCurrency from "../util";
-function Task({ image, title, desc, type, deadline }) {
+function Task({_id, image, title, desc, deadline }) {
+    function addToCart(){
+        console.log()
+    }
+
     return (
-    
         <div className="task">
             <img src={image} alt={title} />
 
@@ -30,7 +32,8 @@ function Task({ image, title, desc, type, deadline }) {
                 {formatCurrency(deadline)} 
                 </p>
 
-                <Link className="info__button">Assign Task</Link>
+                <button  onClick={() => addToCart()} className="info__button">Assign Task</button>
+
             </div>
         </div>
         
