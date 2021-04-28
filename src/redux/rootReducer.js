@@ -2,7 +2,7 @@
 
 //Step 2 Redux
 
-import taskReducer from "./Task.js/task-reducers"
+import taskReducer from "./Task/task-reducers"
 
 import { combineReducers } from "redux";
 

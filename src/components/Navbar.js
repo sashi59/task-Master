@@ -1,7 +1,23 @@
+import React, { useState, useEffect } from "react";
 import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-const Navbar = ({ click }) => {
+
+const Navbar = ({ click, cart }) => {
+  
+  // Step 6
+  const [cartCount,setCartCount] = useState(0)
+
+// Updating Cart Value
+useEffect(() => {
+  let count = 0;
+  cart.forEach((item) => {
+    count += item.qty;
+  });
+  setCartCount(count);
+}, [cart,cartCount])
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link to="/" className="">
@@ -38,7 +54,7 @@ const Navbar = ({ click }) => {
           <Link to="/task" className="cart__link">
             <i className="fas fa-shopping-cart"></i>
             <span>Tasks</span>
-            <div className= "cart__counter">12</div>
+            <div className="cart__counter">{cartCount}</div>
           </Link>
         </li>
         <li></li>
@@ -53,4 +69,10 @@ const Navbar = ({ click }) => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = (state) => {
+  return {
+    cart: state.taskShop.cart,
+  };
+};
+
+export default connect(mapStateToProps)(Navbar);

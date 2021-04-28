@@ -1,33 +1,31 @@
-import { useState } from "react";
+
 import "../styles/TaskScreen.css";
-import data from "../data.json";
+
 import Task from "../components/Task";
 import Filter from "../components/Filter";
 
 // Redux
 import { connect } from "react-redux";
 
+
+
+
 function TaskScreen({ Data }) {
-  // const [task, settask] = useState({
-  //   task: "",
-  //   sort: "",
-  //   taskItems: [],
-  //   tasks: data.tasks,
-  // });
+
 
   // function sortTasks(event) {
-  //   const sort = event.target.value;
+  //   const sorted = event.target.value;
   //   settask({
-  //     sort: task.sort,
-  //     tasks: task.tasks
+  //     sorted: event.target.value,
+  //     Data: Data.tasks
   //       .slice()
   //       .sort((a, b) =>
-  //         sort === "highest"
-  //           ? a.price > b.price
+  //         sorted === "highest"
+  //           ? a.deadline > b.deadline
   //             ? 1
   //             : -1
-  //           : sort === "lowest"
-  //             ? a.price < b.price
+  //           : sorted === "lowest"
+  //             ? a.deadline < b.deadline
   //               ? 1
   //               : -1
   //             : a._id < b._id
@@ -35,7 +33,19 @@ function TaskScreen({ Data }) {
   //               : -1
   //       ),
   //   });
+
   // }
+
+
+  //   // Updating Cart Value
+  // useEffect(() => {
+  //   let count = 0;
+  //   cart.forEach((item) => {
+  //     count += item.qty;
+  //   });
+  //   setCartCount(count);
+  // }, [cart,cartCount])
+
 
   // function filterTasks(event) {
   //   if (event.target.value === "") {
@@ -65,26 +75,16 @@ function TaskScreen({ Data }) {
         <Filter
           // length={data.tasks.length}
           // task={task}
-          // sort={task.sort}
-          // filterTasks={filterTasks}
-          // sortTasks={sortTasks}
+          Data={Data}
+        // type ={type}
+
+        // filterTasks={filterTasks}
+        // sortTasks={sortTasks}
         />
         <div className="taskScreen__tasks">
-          {/* {task.tasks.map((val, index) => { */}
-  {Data.tasks.map( task =>{
-            return (
-              <Task key = {task._id} taskData={task}
-                // key={index}
-                // _id={val._id}
-                // image={val.image}
-                // title={val.title}
-                // desc={val.desc}
-                // deadline={val.deadline}
-              />
-            );
+          {Data.tasks.map((task) => {
+            return <Task key={task._id} taskData={task} />;
           })}
-
-
         </div>
       </div>
     </div>
@@ -97,6 +97,5 @@ const mapStateToProps = (state) => {
     Data: state.taskShop.Data,
   };
 };
-
 
 export default connect(mapStateToProps)(TaskScreen);

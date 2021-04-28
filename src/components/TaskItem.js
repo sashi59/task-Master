@@ -1,33 +1,26 @@
 import React from 'react'
 import "../styles/TaskItems.css"
 
-function TaskItem() {
+import { connect } from "react-redux";
+// Step -- 8
+import {removeFromTask} from "../redux/Task/task-actions"
+
+function TaskItem({itemData,removeFromTask}) {
     return (
         <div className="cartItem">
         <img
           className="cartItem__image"
-          src=""
-          alt="gfgimage"
+          src={itemData.image}
+          alt={itemData.title}
         />
         <div className="cartItem__details">
-          <p className="styles.details__title">This is the titttle</p>
-          <p className="details__desc">Info</p>
-          <p className="details__price">$ 400</p>
+          <p className="styles.details__title">{itemData.title}</p>
+          <p className="details__desc">{itemData.desc}</p>
+          <p className="details__price">{itemData.deadline} days</p>
         </div>
         <div className="cartItem__actions">
-          <div className="cartItem__qty">
-            <label htmlFor="qty">Qty</label>
-            <input
-              min="1"
-              type="number"
-              _id="qty"
-              name="qty"
-              value=""
-              onChange=""
-            />
-          </div>
           <button
-          
+          onClick={() => removeFromTask(itemData._id)}
             className="actions__deleteItemBtn"
           >
             <img
@@ -40,4 +33,12 @@ function TaskItem() {
     )
 }
 
-export default TaskItem
+const mapDispatchToProps = (dispatch) => {
+  return {
+    // adjustQty: (_id, value) => dispatch(adjustItemQty(_id, value)),
+    removeFromTask: (_id) => dispatch(removeFromTask(_id)),
+  };
+};
+
+
+export default connect(null,mapDispatchToProps)(TaskItem);
