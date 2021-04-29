@@ -30,15 +30,6 @@ function TaskItemsScreen({ cart }) {
     });
   };
 
-  // const [order , setOrder] = useState({
-  //   fullName:"",
-  //   email: "",
-  //   department: "",
-  //   city: "",
-  //   tasktitle:"",
-  //   taskdeadline:""
-  // })
-
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, "0");
   var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
@@ -50,15 +41,6 @@ function TaskItemsScreen({ cart }) {
     (item, index) => index + 1 + ")  " + item.title + " "
   );
   const cartDeadlinevalue = Math.round(totalDuration) + " days from " + today;
-
-  // setOrder({
-  //   fullName: data.fullName,
-  //   email: data.email,
-  //   department: data.department,
-  //   city: data.city,
-  //   tasktitle: cartTitlevalue,
-  //   taskdeadline:cartDeadlinevalue,
-  // })
 
   const order = {
     fullName: data.fullName,
@@ -122,6 +104,8 @@ function TaskItemsScreen({ cart }) {
       taskdeadline,
     } = order;
 
+
+    // Fetch Api to post data 
     const response = await fetch("/task", {
       method: "POST",
       headers: {

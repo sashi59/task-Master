@@ -1,9 +1,28 @@
-import React from "react";
-// import "../styles/AdminScreen.css"
+import React, {useEffect, useState} from "react";
+
 function AdminScreen() {
+// Fetching Detailes From Backend
+  const [EmployeeDetails, setGetEmployeeDetails] = useState([{
+    tasktitle: [],
+    _id: "",
+    fullName: "",
+    email:"",
+    department:"",
+    city:"",
+    taskdeadline:""
+  }]);
+
+    useEffect(() => {
+        fetch("/employee").then(res =>{
+          if(res.ok){
+            return res.json();
+          }
+        }).then(jsonRes => setGetEmployeeDetails(jsonRes))
+      },);
+
   return (
     <div>
-    <table class="table">
+    <table className="table">
   <thead>
     <tr>
       <th scope="col">Sl no</th>
@@ -16,30 +35,18 @@ function AdminScreen() {
       <th scope="col">Deadline</th>
     </tr>
   </thead>
-  <tbody>
+  {EmployeeDetails.map( (employee,index) => <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
+      <th style={{paddingLeft:"20px"}} scope="row">{index+1}</th>
+      <td>{employee._id}</td>
+      <td>{employee.fullName}</td>
+      <td>{employee.email}</td>
+      <td>{employee.department}</td>
+      <td>{employee.city}</td>
+      <td>{employee.tasktitle + " "}</td>
+      <td>{employee.taskdeadline}</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@twitter</td>
-    </tr>
-    
-  </tbody>
+  </tbody>)}
 </table>
     </div>
   );

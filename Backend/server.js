@@ -18,7 +18,18 @@ mongoose.connect(
 );
 
 app.get("/", (req, res) => {
-    res.json({ message: "Hi There, Welcom to the server :) !" });
+  res.send("Hey There , Greetings From The Server. Have a Good Day :)")
+    
+})
+app.get("/employee", (req, res) => {
+    
+  Employee.find({  })
+  .then((data) => {
+      res.json(data);
+  })
+  .catch((error) => {
+      console.log('error: ', error);
+  });
   });
   
   
