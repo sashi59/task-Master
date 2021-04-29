@@ -26,7 +26,7 @@ const taskReducer = (state = INITIAL_STATE, action) => {
         cart: inCart
           ? state.cart.map((item) =>
               item._id === action.payload._id
-                ? { ...item, qty: item.qty + 1 }
+                ? { ...item, qty: item.qty }
                 : item
             )
           : [...state.cart, { ...item, qty: 1 }],

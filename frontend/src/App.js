@@ -1,16 +1,18 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useState } from "react";
 
 // Components
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import SideDrawer from "./components/SideDrawer";
-import Backdrop from "./components/Backdrop"
+import Backdrop from "./components/Backdrop";
 
 // Screens
-import HomeScreen from "./screens/HomeScreen"
-import TaskScreen from "./screens/TaskScreen"
-import { useState } from "react";
-import TaskItemsScreen from "./screens/TaskItemsScreen";
+import HomeScreen from "./screens/HomeScreen";
+import TaskScreen from "./screens/TaskScreen";
+import AdminScreen from "./screens/AdminScreen";
+import TaskItemsScreen from "./screens/TaskItemsScreen";;
+
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
         <Route exact path="/task" component={TaskItemsScreen} />
         <Switch>
           <Route exact path="/" component={HomeScreen} />
+          <Route exact path="/admin" component={AdminScreen} />
           <Route exact path="/taskmanager" component={TaskScreen} />
         </Switch>
       </main>
