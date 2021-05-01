@@ -30,7 +30,7 @@
         "image": "/images/software1.png",
         "title": "cami maxi dress in polka dot",
         "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-        "type": ["Software"],
+        "type": ["software"],
         "deadline":30
       },
       {
@@ -48,6 +48,22 @@
         "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "type": ["software"],
         "deadline": 49.9
+      },
+      {
+        "_id": "task7",
+        "image": "/images/software1.png",
+        "title": "Midi sundress with ruched front",
+        "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "type": ["workforce"],
+        "deadline":18.9
+      },
+      {
+        "_id": "task8",
+        "image": "/images/software1.png",
+        "title": "Midi sundress with ruched front",
+        "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "type": ["workforce"],
+        "deadline":18.9
       }
     ]
   }

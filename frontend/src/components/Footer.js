@@ -11,7 +11,7 @@ function Footer() {
                 <h3>Interapt</h3>
 
                 <p className="footer-links">
-                    <a href="#" className="link-1">Home</a>
+                    <a href="https://interapt.com/" className="link-1">Home</a>
 
                     <a href="#">Blog</a>
 

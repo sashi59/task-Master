@@ -3,7 +3,6 @@ import "../styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-
 const Navbar = ({ click, cart }) => {
   
   // Step 6
@@ -20,10 +19,13 @@ useEffect(() => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <Link to="/" className="">
-        <span className="logo">
-          {/* <img src={logo} style={{ height: "40px", width: "200px" }} alt="" /> */}
-        </span>
+      <Link to="/" style={{textDecoration: 'none'}} className="">
+    <div style={{display: 'flex',marginLeft:"20px"}}>
+
+          <img src="https://i.pinimg.com/280x280_RS/e3/dc/86/e3dc8699f58c5a48c740b633e4c8651f.jpg" style={{height: "40px",width:" 40px",marginTop: "",marginRight: "4px", fontSize:""}}  alt="" />
+          <h1 style={{color:"#fff"}}>Interapt</h1>
+    </div>
+      
       </Link>
 
       <ul className="navbar__links">
@@ -52,7 +54,7 @@ useEffect(() => {
       <ul className="navbar__links">
         <li>
           <Link to="/task" className="cart__link">
-            <i className="fas fa-shopping-cart"></i>
+          <i class="fas fa-calendar-check fa-lg"></i>
             <span>Tasks</span>
             <div className="cart__counter">{cartCount}</div>
           </Link>

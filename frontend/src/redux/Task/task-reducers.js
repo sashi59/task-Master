@@ -1,5 +1,6 @@
 import * as actionTypes from "./task-types";
 
+
 import Data from "../../data.json";
 
 const INITIAL_STATE = {
@@ -8,6 +9,7 @@ const INITIAL_STATE = {
   cart: [],
   currentItem: null,
 };
+
 
 const taskReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {

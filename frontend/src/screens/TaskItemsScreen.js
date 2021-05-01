@@ -51,35 +51,6 @@ function TaskItemsScreen({ cart }) {
     taskdeadline: cartDeadlinevalue,
   };
 
-  // cart = [
-  //   {
-  //     deadline: 2
-  //   desc: "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you."
-  //   image: "/images/software1.png"
-  //   qty: 2
-  //   title: "Midi sundress with shirring detail"
-  //   type: ["software"]
-  //   _id: "task1"
-  //   },
-
-  // {
-  //     deadline: 2
-  //   desc: "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you."
-  //   image: "/images/software1.png"
-  //   qty: 2
-  //   title: "Midi sundress with shirring detail"
-  //   type: ["software"]
-  //   _id: "task1"
-  //   }
-  // ]
-
-  // data ={
-  //   city: "Bhubaneswar"
-  // department: "hjm"
-  // email: "payalpatra105@gmail.com"
-  // fullName: "Payal patra"
-  // }
-
   useEffect(() => {
     let items = 0;
     let deadline = 0;
@@ -144,12 +115,12 @@ function TaskItemsScreen({ cart }) {
             <span>Deadline: {Math.round(totalDuration)} days</span>
           </div>
           <button onClick={handleCheckout} className="summary__checkoutBtn">
-            Proceed To Checkout
+            Proceed To Assign
           </button>
         </div>
       </div>
 
-      {showCheckout === true ? (
+      {showCheckout === true && totalItems >0  ? (
         <div>
           <form>
             <div className="form__container">

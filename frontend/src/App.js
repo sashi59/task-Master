@@ -11,6 +11,7 @@ import Backdrop from "./components/Backdrop";
 import HomeScreen from "./screens/HomeScreen";
 import TaskScreen from "./screens/TaskScreen";
 import AdminScreen from "./screens/AdminScreen";
+import AboutScreen from "./screens/AboutScreen";
 import TaskItemsScreen from "./screens/TaskItemsScreen";;
 
 
@@ -27,8 +28,9 @@ function App() {
         <Route exact path="/task" component={TaskItemsScreen} />
         <Switch>
           <Route exact path="/" component={HomeScreen} />
-          <Route exact path="/admin" component={AdminScreen} />
+          <Route exact path="/about" component={AboutScreen} />
           <Route exact path="/taskmanager" component={TaskScreen} />
+          <Route exact path="/admin" component={AdminScreen} />
         </Switch>
       </main>
       <Footer />
