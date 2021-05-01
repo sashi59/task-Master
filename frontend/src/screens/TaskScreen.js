@@ -31,37 +31,11 @@ function TaskScreen({ Data }) {
     }
   }
 
-  // setType(e)
-
-  // function sortTasks(event) {
-  //   const sorted = event.target.value;
-  //   settask({
-  //     sorted: event.target.value,
-  //     Data: Data.tasks
-  //       .slice()
-  //       .sort((a, b) =>
-  //         sorted === "highest"
-  //           ? a.deadline > b.deadline
-  //             ? 1
-  //             : -1
-  //           : sorted === "lowest"
-  //             ? a.deadline < b.deadline
-  //               ? 1
-  //               : -1
-  //             : a._id < b._id
-  //               ? 1
-  //               : -1
-  //       ),
-  //   });
-
-  // }
 
   function show(event) {
-    console.log(Data.tasks.filter((task) => task.type[0] === "business"));
-    // console.log(
-    //   Data.tasks.filter((task) => task.type[0].type)
-    // )
-    // console.log(SoftwareFiltered)
+  
+      
+    
   }
 
   const Filtered = Data.tasks.filter((task) => task.type[0] === _type.type);
@@ -70,7 +44,9 @@ function TaskScreen({ Data }) {
     <div className="taskScreen">
       <div className="homescreen">
         <div className="container text-center">
-          <h1 className="mt-3 " style={{fontSize:"3rem", color:"#212529"}}>Tasks</h1>
+          <h1 className="mt-3 " style={{ fontSize: "3rem", color: "#212529" }}>
+            Tasks
+          </h1>
           <hr className="w-25 mx-auto" />
         </div>
 
@@ -104,7 +80,7 @@ function TaskScreen({ Data }) {
           </div>
           <div
             className="filter-size"
-            style={{ color: "white", fontSize: "19px"}}
+            style={{ color: "white", fontSize: "19px" }}
           >
             Task Category{" "}
             <select value={_type.type} onClick={show} onChange={changeHandler}>

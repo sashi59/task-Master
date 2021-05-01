@@ -15,6 +15,8 @@ function TaskItemsScreen({ cart }) {
     city: "",
   });
 
+  const [submited ,setSubmited] = useState(false);
+
   function handleCheckout() {
     if (showCheckout === false) {
       setShowCheckout(true);
@@ -66,6 +68,7 @@ function TaskItemsScreen({ cart }) {
 
   const PostData = async (e) => {
     e.preventDefault();
+    setSubmited(true);
     const {
       fullName,
       email,
@@ -75,13 +78,12 @@ function TaskItemsScreen({ cart }) {
       taskdeadline,
     } = order;
 
-
-    // Fetch Api to post data 
+    // Fetch Api to post data
     const response = await fetch("/task", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        'Accept': 'application/json'
+        Accept: "application/json",
       },
       body: JSON.stringify({
         fullName,
@@ -97,6 +99,7 @@ function TaskItemsScreen({ cart }) {
       console.log("Error");
     } else {
       console.log("Task and Employee Data Has Been Added");
+     
     }
   };
 
@@ -120,7 +123,7 @@ function TaskItemsScreen({ cart }) {
         </div>
       </div>
 
-      {showCheckout === true && totalItems >0  ? (
+      {showCheckout === true && totalItems > 0 ? (
         <div>
           <form>
             <div className="form__container">
@@ -229,6 +232,15 @@ function TaskItemsScreen({ cart }) {
                   required={true}
                 />
               </div>
+              {submited === true? (
+                <p>
+                  <p style={{ color: "green" , marginBottom :"0px"}}>
+                    Task Successfully Assigned To {order.fullName}
+                  </p>
+                </p>
+              ) : (
+                <p></p>
+              )}
 
               <button
                 type="submit"

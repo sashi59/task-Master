@@ -54,7 +54,7 @@ useEffect(() => {
       <ul className="navbar__links">
         <li>
           <Link to="/task" className="cart__link">
-          <i class="fas fa-calendar-check fa-lg"></i>
+          <i className="fas fa-calendar-check fa-lg"></i>
             <span>Tasks</span>
             <div className="cart__counter">{cartCount}</div>
           </Link>

@@ -4,7 +4,7 @@ import "../styles/HomeScreen.css";
 function HomeScreen() {
   return (
     <div classNameName="homeScreenMain">
-      <section className="hero">
+      <section className="hero view">
         <div className="hero-content">
           <h1>Driving business performance made easy</h1>
           <h3> we transform clients and empowers humans through technology!</h3>
@@ -61,7 +61,7 @@ function HomeScreen() {
           <p className="product__item__text2">
             Our training programs and tailored curriculum will connect you with
             a diverse pool of talent to help your business succeed in the
-            digital era
+            digital era.
           </p>
         </div>
 
@@ -73,9 +73,9 @@ function HomeScreen() {
           />
           <p className="product__item__text">BUSINESS PROCESS OUTSOURCING</p>
           <p className="product__item__text2">
-            Our expert team manages the entire customer support life-cycle and
-            other critical business operations so you can focus on growing your
-            business
+            Our team manages the entire customer support life-cycle and
+            other critical business operations. 
+            
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ function HomeScreen() {
               <img
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
                 alt="Lewis Alberto Briffa"
-                className="img-responsive img-circle"
+                className="img-responsive "
                 style={{width:"470px",paddingTop:"15px"}}
               />
             </div>
