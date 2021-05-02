@@ -3,32 +3,32 @@
     "tasks": [
       {
         "_id": "task1",
-        "image": "/images/software1.png",
-        "title": "Midi sundress with shirring detail",
-        "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+        "image": "/images/task1.png",
+        "title": "Developing UI using ReactJS",
+        "desc": "Convert figma designs to Frontend Code using reactjs. Also pull the required data from the backend and render it in the frontend. The user acceptance testing shoud be followed strictly for creating the desired user interfaces.",
         "type": ["software"],
-        "deadline": 2
+        "deadline": 5
       },
       {
         "_id": "task2",
-        "image": "/images/software1.png",
-        "title": "Midi sundress with ruched front",
+        "image": "/images/task2.jpg",
+        "title": "Organize webinar on IMPACT program",
         "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "type": ["workforce"],
         "deadline":18.9
       },
       {
         "_id": "task3",
-        "image": "/images/software1.png",
-        "title": "Midi dress in pink ditsy floral",
+        "image": "/images/task3.jpg",
+        "title": "Provide work updates to the client",
         "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "type": ["business"],
         "deadline": 40
       },
       {
         "_id": "task4",
-        "image": "/images/software1.png",
-        "title": "cami maxi dress in polka dot",
+        "image": "/images/task4.jpg",
+        "title": "Check the application responsiveness",
         "desc": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
         "type": ["software"],
         "deadline":30

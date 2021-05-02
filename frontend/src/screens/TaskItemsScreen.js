@@ -40,7 +40,7 @@ function TaskItemsScreen({ cart }) {
   today = mm + "/" + dd + "/" + yyyy;
 
   const cartTitlevalue = cart.map(
-    (item, index) => index + 1 + ")  " + item.title + " "
+    (item, index) =>     index + 1 + ")  " + item.title + " "
   );
   const cartDeadlinevalue = Math.round(totalDuration) + " days from " + today;
 
