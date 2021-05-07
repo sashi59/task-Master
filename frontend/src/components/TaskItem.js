@@ -14,8 +14,13 @@ function TaskItem({ itemData, removeFromTask }) {
         alt={itemData.title}
       />
       <div className="cartItem__details">
-        <p className="styles.details__title">{itemData.title}</p>
-        <p className="details__desc">{itemData.desc}</p>
+        <p  style={{ fontWeight: "bold",fontSize: "15px"}} className="styles.details__title">{itemData.title}</p>
+        <p className="details__desc">
+          <span style={{ fontWeight: "bold", fontSize: "14px" }}>
+            Task Information:{" "}
+          </span>
+          {itemData.desc}
+        </p>
         <p className="details__price">{itemData.deadline} days</p>
       </div>
       <div className="cartItem__actions">
