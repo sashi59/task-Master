@@ -2,12 +2,13 @@
 
 ## Project Overview
 
-This is a full-stack web application. The purpose of this application is to :-
-1) Show the tasks that needs be done in a project within a company.
-2) Assign task to a particular employee with a unique Id.
-3) Get all the details of assigned tasks with employees lists.
-4) Updates the tasks and employee details in realtime.
+This is a full-stack web application. The motive behind this project is to drive business performance and to help companies/small startups manage employee details and keep a record of the tasks assigned to the employees. This application transforms clients and empowers enterprises through technology.
 
+1) Show the tasks that need to be done in a project within a company. (Basically the lists of tasks )
+2) Assign tasks to a particular employee with a unique Id.
+3) Filters the tasks according to 3 main categories (i.e Information Technology, Workforce Development, Business process outsourcing)
+4) Get all the details of assigned tasks with employee lists.
+5) Updates the tasks with the employee details and displays them in Admin  Screen in real-time.
 
 ## Installation Guidlines
 
