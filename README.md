@@ -1,3 +1,7 @@
+[![Coverage Status](https://coveralls.io/repos/github/ntkme/github-buttons/badge.svg)](https://coveralls.io/github/ntkme/github-buttons)
+[![NPM](https://img.shields.io/npm/v/react-github-buttons.svg)](https://www.npmjs.com/package/react-github-buttons)
+[![Build Status](https://travis-ci.com/vaibhavhrt/react-github-buttons.svg?branch=master)](https://travis-ci.com/vaibhavhrt/react-github-buttons)
+
 # Task-Management-System
 
 ## Project Overview
@@ -5,10 +9,17 @@
 This is a full-stack web application. The motive behind this project is to drive business performance and to help companies/small startups manage employee details and keep a record of the tasks assigned to the employees. This application transforms clients and empowers enterprises through technology.
 
 1) Show the tasks that need to be done in a project within a company. (Basically the lists of tasks )
-2) Assign tasks to a particular employee with a unique Id.
-3) Filters the tasks according to 3 main categories (i.e Information Technology, Workforce Development, Business process outsourcing)
-4) Get all the details of assigned tasks with employee lists.
-5) Updates the tasks with the employee details and displays them in Admin  Screen in real-time.
+2) Each task has its own description and a deadline.
+3) Assign tasks to a particular employee with a unique Id.
+4) Filters the tasks according to 3 main categories (i.e Information Technology, Workforce Development, Business process outsourcing)
+5) Get all the details of assigned tasks with employee lists.
+6) It also shows the deadline and the total number of tasks.
+7) Updates the tasks with the employee details and displays them in Admin  Screen in real-time.
+
+
+## Live Demo
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://task-management-system8.herokuapp.com/)
+
 
 ## Installation Guidlines
 
