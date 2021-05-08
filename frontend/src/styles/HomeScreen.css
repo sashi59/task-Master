@@ -67,7 +67,7 @@ h3 {
 }
 
 .hero {
-  /* background-image: url(https://interapt.com/wp-content/uploads/2020/12/IMG_20191207_105945.jpg); */
+ 
   background-image: url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1363&q=80);
 
 
@@ -133,69 +133,6 @@ h3 {
 
 
 
-/* // Section 2
- */
-
-.Homesecond {
-  height: 280px;
-  background-color: rgb(70, 155, 189);
-  margin-top: 0.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 110px 110px;
-  display: flex;
-}
-.Homesecond >h1{
-  color: #fff;
-  font-size: 27px;;
-}
-.Homesecond > img {
-  height: 120px;
-  margin-right: 40px;
-}
-
-@media screen and (max-width: 1280px) {
-.Homesecond{
-  height:40px;
-}
-  .Homesecond >h1 {
-    font-size:22px
-  }
-  .Homesecond > img {
-    height: 90px;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .Homesecond{
-    padding:100px 70px;
-  }
-  .Homesecond >h1 {
-    font-size:18px
-  }
-  .Homesecond > img {
-    height: 70px;
-    margin-right: 20px;
-  }
-  }
-
-@media screen and (max-width: 481px) {
-  .Homesecond {
-    height: 100px;
-    padding: 10px 10px;
-  
-    }
-    .Homesecond >h1 {
-      font-size:12px
-    }
-    .Homesecond > img {
-      height: 50px;
-      margin-right: 20px;
-    }
-  }
-
-/* //// Section 3 */
 
 main {
   margin: 0 0 40px;
@@ -335,49 +272,21 @@ main {
 
 }
 
-#about .info {
-  display: flex;
-  flex-direction: row;
+
+    
+
+    
+
+.view {
+  background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1363&q=80")no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+height:90vh;
+/* opacity: 0.93; */
 }
 
-#about h2 {
-  color: #0d2435;
-  width: 500px;
-
-  font-size: 57px;
-}
-
-#about h2::after {
-  border-bottom: 2px dashed #918d8d;
-}
-
-#about .info p {
-  line-height: 230%;
-}
-
-@media screen and (max-width: 1550px) {
-  #about h2 {
-  
-    font-size: 47px;
-  }
-  .img-responsive {
-    width: 400px!important;
-  }
-  #about .info p {
-    line-height: 170%;
-  }
-  #about h2 {
-    margin-top:10px
-  }
-  
-}
-
-
-@media screen and (max-width: 1280px) {
- 
-  #about .container {
-  
-  margin-left: 45px;;
-  }
-  
+.full-bg-img {
+  color: #fff;
 }

@@ -7,22 +7,8 @@ const Employee = require("./models/Employee")
 const app = express();
 app.use(express.json());
 
-//  async () => {
-//   try {
-//     await mongoose.connect(process.env.MONGO_URI, {
-//       useNewUrlParser: true,
-//       useUnifiedTopology: true,
-//     });
-
-//     console.log("MongoDB connection SUCCESS");
-//   } catch (error) {
-//     console.error("MongoDB connection FAIL");
-//     process.exit(1);
-//   }
-// };
-
      mongoose.connect(
-    "mongodb+srv://admin-payal:kitkat8249@cluster0.ifcel.mongodb.net/EmployeeDetails?retryWrites=true&w=majority",
+    process.env.MONGO_URI ,
     {
         useNewUrlParser: true,
         useCreateIndex: true,

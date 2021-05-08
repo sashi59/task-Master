@@ -104,7 +104,7 @@ function TaskItemsScreen({ cart }) {
   };
 
   return (
-    <div className="">
+    <div className="TaskItemScreen">
       <div className="cart">
         <div className="cart__items">
           {cart.map((item) => (
@@ -255,6 +255,7 @@ function TaskItemsScreen({ cart }) {
       ) : (
         <p></p>
       )}
+      <div style={{height:"200px"}}></div>
     </div>
   );
 }

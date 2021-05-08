@@ -74,8 +74,6 @@ function TaskScreen({ Data }) {
             Task Duration{" "}
             <select value="" onChange="">
               <option>Latest</option>
-              <option value="highest">lowest</option>
-              <option value="lowest">Highest</option>
             </select>
           </div>
           <div

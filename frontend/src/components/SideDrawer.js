@@ -18,7 +18,7 @@ const SideDrawer = ({ show, click }) => {
           <i className="fas fa-calendar-check fa-lg"></i>
             <span>
               Tasks{" "}
-              <span className="sidedrawer__cartbadge">1</span>
+              {/* <span className="sidedrawer__cartbadge"></span> */}
             </span>
           </Link>
         </li>

@@ -35,7 +35,7 @@
       },
       {
         "_id": "task5",
-        "image": "https://www.naukri.com/learning/articles/wp-content/uploads/sites/11/2020/08/Software-Testing-Interview-Questions.png",
+        "image": "/images/task5.png",
         "title": " Performance testing and optimization",
         "desc": "Ensure that the back end operations such as query time and throughput both work properly,check that the website works appropriately on different browsers.Also enable the website to handle large volumes and different patterns of traffic.",
         "type": ["software"],
@@ -43,7 +43,7 @@
       },
       {
         "_id": "task6",
-        "image": "https://www.brighttalk.com/communication/330129/preview_1531236812.png",
+        "image": "/images/task6.png",
         "title": "Update Risk Management Playbooks and Plans",
         "desc": "Ensure to update business continuity and recovery plans, build a culture of preparedness and test the existing plans. Also establish processes that can protect the organization, people, technology, facilities and customers. ",
         "type": ["business"],
@@ -51,7 +51,7 @@
       },
       {
         "_id": "task7",
-        "image": "https://mk0digitallearn7ttjx.kinstacdn.com/wp-content/uploads/2019/07/Growth-of-Integrated-Learning-Solutions.png",
+        "image": "/images/task7.png",
         "title": "Develop new training strategies",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga .",
         "type": ["workforce"],
@@ -59,7 +59,7 @@
       },
       {
         "_id": "task8",
-        "image": "https://marvel-b1-cdn.bc0a.com/f00000000075552/www.perforce.com/sites/default/files/image/2020-07/image-blog-improve-developer-workflow.jpg",
+        "image": "/images/task8.webp",
         "title": "Build reusable code and libraries ",
         "desc": "Plan and identify all the parts of the software which needs to be divided into chunks. Divide the software system into multiple independent modules and make each class/method do just one thing.Also Focus on the functionality and required performance.",
         "type": ["software"],

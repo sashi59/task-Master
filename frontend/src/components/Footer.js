@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 import "../styles/Footer.css"
 
 function Footer() {
@@ -7,11 +8,13 @@ function Footer() {
         <footer className="footer-distributed">
 
             <div className="footer-left">
+                <Link to="/" style={{ textDecoration: 'none' }}>
 
-                <h3>Interapt</h3>
+                    <h3>Hack To Enable</h3>
+                </Link>
 
                 <p className="footer-links">
-                    <a href="https://interapt.com/" className="link-1">Home</a>
+                    <a href="" className="link-1">Home</a>
 
                     <a href="#">Blog</a>
 
@@ -24,7 +27,7 @@ function Footer() {
                     <a href="#">Contact</a>
                 </p>
 
-                <p className="footer-company-name">Interapt © 2021</p>
+                <p className="footer-company-name">Hack To Enable © 2021</p>
             </div>
 
             <div className="footer-center">
@@ -41,7 +44,7 @@ function Footer() {
 
                 <div>
                     <i className="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">info@interapt.com</a></p>
+                    <p><a href="mailto:support@company.com">innovativeDev@company.com</a></p>
                 </div>
 
             </div>
@@ -49,7 +52,7 @@ function Footer() {
             <div className="footer-right">
 
                 <p className="footer-company-about">
-                    <span>About the company</span>
+                    <span>Innovative Dev</span>
         Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
     </p>
 

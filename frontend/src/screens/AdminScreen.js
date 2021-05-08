@@ -25,7 +25,7 @@ function AdminScreen() {
   });
 
   return (
-    <div className="adminScreen">
+    <div className="adminScreen" >
       <table className="table">
         <thead>
           <tr>
@@ -56,6 +56,7 @@ function AdminScreen() {
           </tbody>
         ))}
       </table>
+      <div style={{height:"290px"}}></div>
     </div>
   );
 }

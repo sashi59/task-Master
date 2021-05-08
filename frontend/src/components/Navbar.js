@@ -22,8 +22,8 @@ useEffect(() => {
       <Link to="/" style={{textDecoration: 'none'}} className="">
     <div style={{display: 'flex',marginLeft:"20px"}}>
 
-          <img src="https://i.pinimg.com/280x280_RS/e3/dc/86/e3dc8699f58c5a48c740b633e4c8651f.jpg" style={{height: "40px",width:" 40px",marginTop: "",marginRight: "4px", fontSize:""}}  alt="" />
-          <h1 style={{color:"#fff"}}>Interapt</h1>
+          <img src="https://he-s3.s3.amazonaws.com/media/cache/9e/07/9e075ec941a755e18811b38b920c2d77.png" style={{height: "40px",width:" 40px",marginTop: "",marginRight: "4px", fontSize:""}}  alt="" />
+          <h1 style={{color:"#fff",fontSize:"35px"}}>Hack To Enable</h1>
     </div>
       
       </Link>
