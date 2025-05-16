@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
      mongoose.connect(
-    process.env.MONGO_URI ,
+    process.env.MONGO_URI ,() => console.log("Connected to MongoDB"),
     {
         useNewUrlParser: true,
         useCreateIndex: true,

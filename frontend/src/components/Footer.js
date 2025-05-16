@@ -10,41 +10,37 @@ function Footer() {
             <div className="footer-left">
                 <Link to="/" style={{ textDecoration: 'none' }}>
 
-                    <h3>Hack To Enable</h3>
+                    <h3>Task Master</h3>
                 </Link>
 
                 <p className="footer-links">
                     <a href="" className="link-1">Home</a>
 
-                    <a href="#">Blog</a>
-
-                    <a href="#">Pricing</a>
+                    <a href="#">Task Assigner</a>
 
                     <a href="#">About</a>
+                    <a href="#">Admin</a>
 
-                    <a href="#">Faq</a>
-
-                    <a href="#">Contact</a>
                 </p>
 
-                <p className="footer-company-name">Hack To Enable © 2021</p>
+                <p className="footer-company-name">Task Master © 2025</p>
             </div>
 
             <div className="footer-center">
 
                 <div>
                     <i className="fa fa-map-marker"></i>
-                    <p><span>552 East Market Street</span> Suite 302 Louisville, KY 40202</p>
+                    <p><span>V.V Nagar, Anand</span> Near BVM College, 388120</p>
                 </div>
 
                 <div>
                     <i className="fa fa-phone"></i>
-                    <p>(502) 203-1125</p>
+                    <p>+91 9327934732</p>
                 </div>
 
                 <div>
                     <i className="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">innovativeDev@company.com</a></p>
+                    <p><a href="mailto:support@company.com">taskmaster@gmail.com</a></p>
                 </div>
 
             </div>
@@ -52,7 +48,7 @@ function Footer() {
             <div className="footer-right">
 
                 <p className="footer-company-about">
-                    <span>Innovative Dev</span>
+                    <span>Dev Designers</span>
         Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
     </p>
 

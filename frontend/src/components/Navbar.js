@@ -23,7 +23,7 @@ useEffect(() => {
     <div style={{display: 'flex',marginLeft:"20px"}}>
 
           <img src="https://he-s3.s3.amazonaws.com/media/cache/9e/07/9e075ec941a755e18811b38b920c2d77.png" style={{height: "40px",width:" 40px",marginTop: "",marginRight: "4px", fontSize:""}}  alt="" />
-          <h1 style={{color:"#fff",fontSize:"35px"}}>Hack To Enable</h1>
+          <h1 style={{color:"#fff",fontSize:"35px"}}>Task Master</h1>
     </div>
       
       </Link>
